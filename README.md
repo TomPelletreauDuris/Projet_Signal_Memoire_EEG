@@ -26,3 +26,21 @@ montrerons comment ces méthodes peuvent s'appliquer à l’analyse d'un signal 
 caractériser la profondeur d’encodage mémoriel d’un utilisateur, c’est à dire, sa capacité à
 transformer des informations traitées par sa mémoire de travail en informations mémorielles de
 long terme.
+
+# Conclusion 
+
+L’expérience menée sur l’encodage mémoriel avait pour objectif de mesurer les différences des
+régularités des signaux EEG des sujets entre deux phases d’encodage d’une liste d’une vingtaine
+de mots : la première phase faisant appel à une mémorisation formelle lorsque la deuxième fait
+intervenir la mémorisation sémantique. On s’aperçoit que, pour l’ensemble des sujets, le critère
+de Hurst est inférieur à 1.5, et se diminue entre la phase 1 et la phase 2. Pour certains sujets, 𝛼 se
+rapproche de 0.5 pour la phase 2. On sait qu’en phase d’apprentissage, la profondeur mémorielle
+dépend du mode de mémoire sollicitée. Ainsi, la mémoire sémantique est plus profonde que la
+mémoire formelle. Nos résultats nous montrent que la phase formelle a un 𝛼 plus élevé que la
+phase sémantique. On peut donc dire que plus l’encodage est profond plus la régularité du signal
+est faible.
+Ce TP nous aura permis d’appréhender le traitement numérique d’un signal
+physiologique. Non seulement en nous permettant de manipuler les méthodes d’analyses tempsfréquence des signaux mais aussi en étudiant la régularité d’un signal selon deux méthodes :
+Detrending Fluctuation Analysis d’ordre 3 (DFA3) et Detrending Moving Average (DMA). Dans
+un cas, il aura fallu commencer par analyser les tendances locales sur un nombre de segments
+défini pour ensuite les concaténer en une tendance globale, tandis que dans l’autre un filtre passebas est appliqué au signal pour en déduire une tendance. 
